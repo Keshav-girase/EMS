@@ -21,7 +21,7 @@ const {CLIENT_URL} = process.env;
 // console.log(CLIENT_URL);
 
 const corsOptions = {
-  origin: 'https://ems-bgyywgtwh-keshavs-projects-d64c1adb.vercel.app', // update to your frontend
+  origin: ['https://ems-bgyywgtwh-keshavs-projects-d64c1adb.vercel.app', 'https://ems-kbol.vercel.app/', ] // update to your frontend
   credentials: true
 };
 
