@@ -21,13 +21,13 @@ const {CLIENT_URL} = process.env;
 // console.log(CLIENT_URL);
 
 //Cors Option
-const corsOption = {
-    credentials:true,
-    origin: '*'
-}
+// const corsOption = {
+//     credentials:true,
+//     origin: '*'
+// }
 
 //Configuration
-app.use(cors(corsOption));
+app.use(cors());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(cookieParser());
