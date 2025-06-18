@@ -21,11 +21,12 @@ const {CLIENT_URL} = process.env;
 // console.log(CLIENT_URL);
 
 const corsOptions = {
-  origin: 'https://ems-bgyywgtwh-keshavs-projects-d64c1adb.vercel.app',
-  credentials: true,
+  origin: 'https://ems-bgyywgtwh-keshavs-projects-d64c1adb.vercel.app', // update to your frontend
+  credentials: true
 };
 
 app.use(cors(corsOptions));
+app.options('*', cors(corsOptions));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(cookieParser());
